@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART Studio</title>
+    <link rel="icon" type="image/x-icon" href="/image/icon1.png">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" type="text/css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            color: #333; /* Dark text color */
+        }
+
+        .navbar {
+            background-color: #333; /* Dark navbar color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important; /* Light text color */
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            display: none;
+        }
+
+        .gallery-item:hover .gallery-info {
+            display: block;
+        }
+
+        .category {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category h3 {
+            background-color: #333;
+            color: #f8f9fa;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logoartstudio.jpg" alt="Logo" style="height: 30px; margin-right: 10px;">
+                Artscape Studio and Gallery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <!-- Painting Category -->
+        <div class="category">
+            <h3>Paintings</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image18.jpg" class="card-img-top img-fluid" alt="Painting 1">
+                    <div class="gallery-info">
+                        <h5 class="card-title">The Army and the Moon</h5>
+                        <p class="card-text">Artist: Jane Smith</p>
+                        <p class="card-text">Medium: Oil on Canvas</p>
+                        <p class="card-text">Year: 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image19.jpg" class="card-img-top img-fluid" alt="Painting 2">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Nature's Embrace</h5>
+                        <p class="card-text">Artist: John Doe</p>
+                        <p class="card-text">Medium: Watercolor</p>
+                        <p class="card-text">Year: 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image20.jpg" class="card-img-top img-fluid" alt="Painting 3">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Abstract Dreams</h5>
+                        <p class="card-text">Artist: Emma Johnson</p>
+                        <p class="card-text">Medium: Acrylic on Canvas</p>
+                        <p class="card-text">Year: 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sculpture Category -->
+        <div class="category mt-5">
+            <h3>Sculptures</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image21.jpg" class="card-img-top img-fluid" alt="Sculpture 1">
+                    <div class="gallery-info">
+                        <h5 class="card-title">The Thinker</h5>
+                        <p class="card-text">Artist: Leo Davis</p>
+                        <p class="card-text">Medium: Bronze</p>
+                        <p class="card-text">Year: 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image22.jpg" class="card-img-top img-fluid" alt="Sculpture 2">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Modern Form</h5>
+                        <p class="card-text">Artist: Sarah Brown</p>
+                        <p class="card-text">Medium: Marble</p>
+                        <p class="card-text">Year: 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image23.jpg" class="card-img-top img-fluid" alt="Sculpture 3">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Eternal Love</h5>
+                        <p class="card-text">Artist: Michael Green</p>
+                        <p class="card-text">Medium: Wood</p>
+                        <p class="card-text">Year: 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Category -->
+        <div class="category mt-5">
+            <h3>Installations</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image24.jpg" class="card-img-top img-fluid" alt="Installation 1">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Urban Jungle</h5>
+                        <p class="card-text">Artist: Anna White</p>
+                        <p class="card-text">Medium: Mixed Media</p>
+                        <p class="card-text">Year: 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image25.jpg" class="card-img-top img-fluid" alt="Installation 2">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Light Waves</h5>
+                        <p class="card-text">Artist: David Black</p>
+                        <p class="card-text">Medium: LED and Glass</p>
+                        <p class="card-text">Year: 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="image/image26.jpg" class="card-img-top img-fluid" alt="Installation 3">
+                    <div class="gallery-info">
+                        <h5 class="card-title">Reflective Surfaces</h5>
+                        <p class="card-text">Artist: Mary Johnson</p>
+                        <p class="card-text">Medium: Mirrors and Metal</p>
+                        <p class="card-text">Year: 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="category">
+        <h3>Photostory</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card gallery-item">
+                <img src="image/rev9.jpg" class="card-img-top img-fluid" alt="Painting 1">
+                <div class="gallery-info">
+                    <h5 class="card-title">Kissing Romance</h5>
+                    <p class="card-text">Photographer: Tania & Harold</p>
+                    <p class="card-text">Year: 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-item">
+                <img src="image/rev10.jpg" class="card-img-top img-fluid" alt="Painting 2">
+                <div class="gallery-info">
+                    <h5 class="card-title">Girl Photoshot</h5>
+                    <p class="card-text">Photographer: Aprilliyani</p>
+                    <p class="card-text">Year: 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-item">
+                <img src="image/rev11.jpg" class="card-img-top img-fluid" alt="Painting 3">
+                <div class="gallery-info">
+                    <h5 class="card-title">Extreme Longshot</h5>
+                    <p class="card-text">Photographer: Emma Johnson</p>
+                    <p class="card-text">Year: 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3 bg-dark text-light">
+            © 2024 Artscape Studio and Gallery. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+</body>
+</html>

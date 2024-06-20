@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART Studio</title>
+    <link rel="icon" type="image/x-icon" href="/image/icon1.png">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" type="text/css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Ivory color */
+            color: #333; /* Black text color */
+        }
+
+        .navbar {
+            background-color: #333; /* Black color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important; /* Ivory color */
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #f8f9fa; /* Ivory color */
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+    
+        .navbar-nav .nav-link:hover::after {
+            transform: translateX(0);
+        }
+
+        h2, h3, h5 {
+            color: #333; /* Black text color */
+        }
+
+        .btn-primary {
+            background-color: #333; /* Black color */
+            border-color: #333; /* Black color */
+        }
+
+        .btn-primary:hover {
+            background-color: #555; /* Dark gray color for hover */
+            border-color: #555; /* Dark gray color for hover */
+        }
+
+        .card {
+            border: 1px solid #333; /* Black border */
+        }
+
+        .card-title, .card-text {
+            color: #333; /* Black text color */
+        }
+
+        footer {
+            background-color: #333; /* Black color */
+        }
+
+        footer .text-light {
+            color: #f8f9fa !important; /* Ivory color */
+        }
+
+        .bg-dark {
+            background-color: #333 !important; /* Black color */
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .testimonial-img, .career-img {
+            max-height: 200px; /* Adjust the max-height as needed */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logoartstudio.jpg" alt="Logo" style="height: 30px; margin-right: 10px;">
+                Artscape Studio and Gallery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="container mt-5">
+        <h2>About Us</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>History and Background</h3>
+                <p>"Artscape Studio & Gallery is an innovative venue that combines creativity, art, and interaction with the creative content community in Yogyakarta, Central Java. </p>
+                <p>Founded with the aim of being a hub for creativity, Artscape Studio & Gallery offers a dedicated space for content creators, artists, and art enthusiasts to collaborate, share ideas, and create inspiring works. It was founded by 5 DKV students of Satya Wacana Christian University."</p>
+                <img src="image/rev8.jpg" class="img-fluid mt-3" alt="Art Studio History">
+            </div>
+            <div class="col-md-6">
+                <h3>Mission and Vision</h3>
+                <p>Vision : <br> Providing a space for content creators and artists to collaborate and share ideas by facilitating content creation needs.</p>
+                <p>Mission : <br>Creating a quality and comfortable production site. Creating a  gallery for artists to channel ideas, collaborate and become a place for promotion.</p>
+                <br>
+                <img src="image/image12.jpg" class="img-fluid mt-3" alt="Mission and Vision">
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="container mt-5">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What are the gallery's opening hours?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our gallery is open from Monday to Saturday, 10 AM to 6 PM.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Is there an entrance fee for art gallery?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, admission to our gallery is $1.22 to the public.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I enroll in photostory workshop
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can register for our photostory workshop through our website or directly at the gallery.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+   <!-- Careers Section -->
+   <section class="container mt-5">
+    <h2>Careers</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Job Opportunities</h3>
+            <p>We are always looking for talented and dedicated individuals to join our team. Currently, we have openings for the following positions:</p>
+            <ul>
+                <li>Gallery Assistant</li>
+                <li>Studio Assistant</li>
+                <li>Social Media Staff</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="col-md-6">
+            <h3>Application Form</h3>
+            <p>To apply, please fill out our application form or send your CV and cover letter to our email at <a href="mailto:careers@artscapegallery.com">careers@artscapegallery.com</a>.</p>
+            <img src="image/image17.jpg" class="img-fluid mt-3 career-img" alt="Careers Image">
+        </div>
+    </div>
+</section>
+ <!-- Testimonials Section -->
+ <section class="container mt-5">
+    <h2>Testimonials</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="image/image16.jpg" class="card-img-top testimonial-img" alt="Client Image">
+                <br><br>
+                <div class="card-body">
+                    <p class="card-text">"The photography gallery at Artscape is truly inspiring. The collection of photos on display is very diverse and full of emotions. <br> - John Doe</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="image/image14.jpg" class="card-img-top testimonial-img" alt="Client Image">
+                <div class="card-body">
+                    <p class="card-text">   "My experience studying photography at Artscape has been amazing. This course gave me in-depth technical knowledge and the opportunity to practice in a studio equipped with the latest equipment. <br>-Clara Michelle</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="image/image15.jpg" class="card-img-top testimonial-img" alt="Client Image">
+                <br>
+                <div class="card-body">
+                    <p class="card-text">"I love attending exhibitions and workshops here. The perfect place for art lovers.I feel that I get a lot of inspiration and new ideas after visiting this gallery." <br>- Alice Johnson</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Privacy Policy & Terms Section -->
+    <section class="container mt-5 mb-5">
+        <h2>Privacy Policy & Terms & Conditions</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Privacy Policy</h3>
+                <p>We value your privacy and are committed to protecting your personal information. Read our full privacy policy for more information.</p>
+                <a href="#" class="btn btn-primary">Read Privacy Policy</a>
+            </div>
+            <div class="col-md-6">
+                <h3>Terms & Conditions</h3>
+                <p>By using this site, you agree to comply with our terms and conditions. Read our full terms and conditions for more information.</p>
+                <a href="#" class="btn btn-primary">Read Terms & Conditions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3 bg-dark text-light">
+            © 2024 Artscape Studio and Gallery. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+</body>
+</html>

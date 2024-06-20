@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artscape Studio & Gallery</title>
+    <link rel="icon" type="image/x-icon" href="/image/logoartstudio.jpg">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" type="text/css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Warna putih gading */
+            color: #333; /* Warna teks hitam */
+        }
+
+        .navbar {
+            background-color: #333; /* Warna hitam */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important; /* Warna putih gading */
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #f8f9fa; /* Warna putih gading */
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            transform: translateX(0);
+        }
+
+        h2, h3, h5 {
+            color: #333; /* Warna teks hitam */
+        }
+
+        .btn-primary {
+            background-color: #333; /* Warna hitam */
+            border-color: #333; /* Warna hitam */
+        }
+
+        .btn-primary:hover {
+            background-color: #555; /* Warna abu-abu gelap untuk hover */
+            border-color: #555; /* Warna abu-abu gelap untuk hover */
+        }
+
+        .card {
+            border: 1px solid #333; /* Border hitam */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title, .card-text {
+            color: #333; /* Warna teks hitam */
+        }
+
+        footer {
+            background-color: #333; /* Warna hitam */
+        }
+
+        footer .text-light {
+            color: #f8f9fa !important; /* Warna putih gading */
+        }
+
+        .bg-dark {
+            background-color: #333 !important; /* Warna hitam */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logoartstudio.jpg" alt="Logo" style="height: 30px; margin-right: 10px;">
+                Artscape Studio and Gallery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Welcome to Our Art Studio and Gallery</h2>
+                <p>Artscape Studio & Gallery is a place that combines creativity, art, and interaction with the community of creators that will be located in Yogyakarta, Central Java.</p> 
+                <p>This studio is designed to provide a space for content creators, artists, and art enthusiasts to collaborate and share ideas by facilitating content creation needs.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="image/rev1.png" class="img-fluid" alt="Art Studio">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mt-5">
+        <h2>Services</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="image/rev2.png" class="card-img-top" alt="Studio Rental">
+                    <div class="card-body">
+                        <h3 class="card-title">Art Gallery</h3>
+                        <p class="card-text">Creative Studio and Content Creator gallery is where creativity and art come together. and interaction with the gang creator content community will be located in Yogyakarta City. The studio is designed to provide a space for content creators, artists, and art enthusiasts to collaborate and share ideas by facilitating content creation needs. In addition to the studio, the gallery here is a place to introduce local art and appreciate religion.</p>
+                        <p class="card-text"><strong>Price: $1.22</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="image/rev3.png" class="card-img-top" alt="Exhibitions">
+                    <div class="card-body">      
+                        <h3 class="card-title">Customize Studio</h3>
+                        <p class="card-text">Make your creative dreams come true in our Customized Studio that is specially designed to suit your tastes and needs.</p>
+                        <p class="card-text"><strong>Price Start From : $15.16</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="image/rev4.png" class="card-img-top" alt="Art Classes">
+                    <div class="card-body">
+                        <h3 class="card-title">Korean Theme Studio</h3>
+                        <p class="card-text">Dive into creativity in our trendy Korean Theme Studio with a touch stunning contemporary Korean style.</p>
+                        <p class="card-text"><strong>Price Start From : $6.06</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <br>
+                <div class="card mb-4">
+                    <img src="image/rev5.png" class="card-img-top" alt="Workshops">
+                    <div class="card-body">
+                        <h3 class="card-title">Regular Photo Studio</h3>
+                        <p class="card-text">Create unforgettable memories with timeless regular backgrounds in our photo studio.</p>
+                        <p class="card-text"><strong>Price Start From : $3.03</strong></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Online Store Section -->
+    <section class="container mt-5">
+        <h2>Online Store</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image7.jpg" class="card-img-top" alt="Painting">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunset Landscape</h5>
+                        <p class="card-text">Beautiful painting of a sunset over a serene landscape. Perfect for adding a touch of tranquility to any room.</p>
+                        <p class="card-text"><strong>Price: $150</strong></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image8.jpg" class="card-img-top" alt="Sculpture">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Sculpture</h5>
+                        <p class="card-text">Abstract sculpture crafted from high-quality materials. A statement piece for modern interiors.</p>
+                        <p class="card-text"><strong>Price: $300</strong></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image9.jpg" class="card-img-top" alt="Merchandise">
+                    <div class="card-body">
+                        <h5 class="card-title">Artistic Mug</h5>
+                        <p class="card-text">Start your day with a cup of coffee in this artistic mug featuring unique designs by local artists.</p>
+                        <p class="card-text"><strong>Price: $20</strong></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping and Purchase Info Section -->
+    <section class="container mt-5 mb-5">
+        <h2>Purchase and Shipping Information</h2>
+        <p>We offer worldwide shipping for all our products. Each purchase is carefully packaged to ensure it arrives safely at your doorstep. Please review our shipping and return policies for more information.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+    </section>
+
+    <!-- Events Section -->
+    <section class="container mt-5">
+        <h2>Events</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Upcoming Events</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>Photostory workshop</strong><br>
+                        Date: July 10, 2024<br>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Register Now</a>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Summer Art Exhibition</strong><br>
+                        Date: August 15, 2024<br>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Buy Tickets</a>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Artist Talk: John Doe</strong><br>
+                        Date: September 5, 2024<br>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">RSVP</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Event Calendar</h3>
+                <p>Stay updated with our latest events. Download our event calendar.</p>
+                <img src="image/image10.jpg" class="card-img-top" alt="Painting">
+                <br><br>
+                <a href="#" class="btn btn-primary">Download Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Blog Section -->
+    <section class="container mt-5 mb-5">
+        <h2>News & Blog</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Latest Activities</h3>
+                <p>Read about our recent activities and how our community is growing. Stay tuned for more updates and news.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Art Industry News</h3>
+                <p>Get the latest news from the art industry. Learn about new trends, artist spotlights, and upcoming events worldwide.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Artist Interviews</h3>
+                <p>Discover insights and stories from artists. Our interviews provide a deeper look into their creative processes and inspirations.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h2>Highlights</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image6.jpg" class="card-img-top" alt="New Artwork">
+                    <div class="card-body">
+                        <h5 class="card-title">New Artwork: "Jesus"</h5>
+                        <p class="card-text">Explore the latest piece by renowned artist Jane Doe. This stunning painting captures the ethereal beauty of a sunset over the mountains.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/rev6.jpg" class="card-img-top" alt="Upcoming Exhibition">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming: "Photo Walk "</h5>
+                        <p class="card-text">Join us for an exhibition featuring the latest works of photo walk. Discover new perspectives and innovative techniques from emerging artists.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/rev7.jpg" class="card-img-top" alt="Art Workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop: "Photostory"</h5>
+                        <p class="card-text">Sign up for our next workshop where you'll learn new Photostory techniques and unleash your creativity. Suitable for all skill levels.</p>
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3 bg-dark text-light">
+            © 2024 Artscape Studio and Gallery. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+</body>
+</html>
